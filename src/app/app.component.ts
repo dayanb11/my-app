@@ -13,23 +13,25 @@ export class AppComponent {
 
   // Each Column Definition results in one Column.
   public columnDefs: ColDef[] = [
-    { field: 'make',hide:true,rowGroup:true} ,
+    { field: 'make',rowGroup:true,hide:true} ,
     { field: 'model'},
     { field: 'price' }
   ];
+  public groupDisplayType ='grouprows'
+  // DefaultColDef sets props c☺ommon to all Columns
 
-  // DefaultColDef sets props common to all Columns
   public defaultColDef: ColDef = {
     sortable: true,
     filter: true,
-    rowGroup:true,
+    editable:true,
+    showRowGroup:true
   };
   
   // Data that gets displayed in the grid
   public rowData$!: Observable<any[]>;
 
   // For accessing the Grid's API
-  @ViewChild(AgGridAngular) agGrid!: AgGridAngular;
+  @ViewChild(AgGridAngular) agGrid!: AgGridAngular;;
 
   constructor(private http: HttpClient) {}
 
