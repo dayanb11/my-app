@@ -5,8 +5,12 @@
     [defaultColDef]="defaultColDef"
     [rowData]="rowData$ | async"
     [rowSelection]="'multiple'"
-    [animateRows]="true"
+    [animateRows]="false"
     (gridReady)="onGridReady($event)"
     (cellClicked)="onCellClicked($event)"
+    [alwaysShowVerticalScroll]="true"
     [enableRtl]="true"
+    [pagination]="false"
+    [debounceVerticalScrollbar]="true"
+    [paginationPageSize]=10
   ></ag-grid-angular>
