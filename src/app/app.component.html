@@ -1,5 +1,5 @@
 <ag-grid-angular
-    style="width: 100%; height: 100%"
+style="width: 100%; height: 100%"
     class="ag-theme-alpine"
     [columnDefs]="columnDefs"
     [defaultColDef]="defaultColDef"
@@ -9,8 +9,9 @@
     (gridReady)="onGridReady($event)"
     (cellClicked)="onCellClicked($event)"
     [alwaysShowVerticalScroll]="true"
+    [autoGroupColumnDef]=""
     [enableRtl]="true"
     [pagination]="false"
     [debounceVerticalScrollbar]="true"
-    [paginationPageSize]=10
+    [animateRows]="true"
   ></ag-grid-angular>

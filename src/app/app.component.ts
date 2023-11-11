@@ -13,7 +13,7 @@ export class AppComponent {
 
   // Each Column Definition results in one Column.
   public columnDefs: ColDef[] = [
-    { field: 'make'},
+    { field: 'make',hide:true,rowGroup:true} ,
     { field: 'model'},
     { field: 'price' }
   ];
@@ -22,6 +22,7 @@ export class AppComponent {
   public defaultColDef: ColDef = {
     sortable: true,
     filter: true,
+    rowGroup:true,
   };
   
   // Data that gets displayed in the grid
