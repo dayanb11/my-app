@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent {
-@Input () forchild:string="parameter for child";
-
+@Input () forchild:string="aaa";
+@Input () intforchild:number=1;
 }

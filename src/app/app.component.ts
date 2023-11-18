@@ -10,9 +10,12 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-forparent:string='forparentexample';
-forchild:string="move this to child";
-  // Each Column Definition results in one Column.
+
+forchild:string="move this  value to child";
+
+intforchild:number=100;
+
+// Each Column Definition results in one Column.
   public columnDefs: ColDef[] = [
     { field: 'make',rowGroup:true,hide:true} ,
     { field: 'model'},
