@@ -12,11 +12,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 })
 export class AppComponent {
 
-//public bgcolor = "background-color: rgb(31 120 50)"; //dark green
+//public bgcolor = "background-color: rgb(31 120,50)"; //dark green
  // public bgcolor = "background-color: rgb(255,65,0"; //dark orange 
   public bgcolor="background-color: rgb(255,0,0); //red";
 forchild:string="move this  value to child";
-// bublic bgcolor="background-color: rgb(31 120 50)";
+// bublic bgcolor="background-color: rgb(31 120,50)";
 
 intforchild:number=100;
 
