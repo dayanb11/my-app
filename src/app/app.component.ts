@@ -13,6 +13,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 export class AppComponent {
 
 forchild:string="move this  value to child";
+bgcolor="background-color: rgb(31 120 50)";
 
 intforchild:number=100;
 
